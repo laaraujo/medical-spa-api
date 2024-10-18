@@ -12,6 +12,7 @@ help:
 	@echo migrate .................. : Django migrate command
 	@echo createsuperuser .......... : Django createsuperuser command
 	@echo shell .................... : Django shell command
+	@echo collectstatic ............ : Django collectstatic command
 	@echo sh ....................... : SSH into local API container
 	@echo linter ................... : Run Ruff linter against all files in this repo
 	@echo
@@ -37,6 +38,9 @@ migrate:
 
 createsuperuser:
 	docker compose run app python manage.py createsuperuser --no-input
+
+collectstatic:
+	docker compose run app python manage.py collectstatic --no-input
 
 shell:
 	docker compose run app python manage.py shell

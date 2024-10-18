@@ -11,3 +11,4 @@ psycopg2-binary==2.9.10
 PyYAML==6.0.2
 sqlparse==0.5.1
 virtualenv==20.27.0
+whitenoise==6.7.0
