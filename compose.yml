@@ -1,0 +1,22 @@
+services:
+  db:
+    container_name: db
+    image: postgres:15
+    environment:
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - 5432:5432
+
+  app:
+    container_name: app
+    build: .
+    command: >
+      sh -c "python manage.py runserver 0.0.0.0:${PORT}"
+    volumes:
+      - ./src:/code
+    ports:
+      - "${PORT}:8000"
+    env_file:
+      - .env
+    depends_on:
+      - db
