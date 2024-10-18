@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "rest_framework",
+    "drf_spectacular",
 ]
 
 MIDDLEWARE = [
@@ -131,3 +133,18 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # Whitenoise - static file serving
 # Since we only need static file for admin we serve those static files ourselves
 MIDDLEWARE += ["whitenoise.middleware.WhiteNoiseMiddleware"]
+
+
+# Django Rest Framework
+REST_FRAMEWORK = {
+    # drf-spectacular / docs
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+}
+
+# drf-spectacular
+SPECTACULAR_SETTINGS = {
+    "TITLE": "Django API Base Template",
+    "DESCRIPTION": "Django API Base Template",
+    "VERSION": "1.0.0",
+    "SERVE_INCLUDE_SCHEMA": False,
+}

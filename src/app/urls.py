@@ -17,7 +17,25 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
+from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path(
+        "docs/schema.yml",
+        SpectacularAPIView.as_view(
+            # permission_classes=[IsAuthenticated, IsAdminUser],
+            # authentication_classes=[SessionAuthentication],
+        ),
+        name="schema",
+    ),
+    path(
+        "docs/",
+        SpectacularSwaggerView.as_view(
+            url_name="schema",
+            # permission_classes=[IsAuthenticated, IsAdminUser],
+            # authentication_classes=[SessionAuthentication],
+        ),
+        name="swagger-ui",
+    ),
 ]
