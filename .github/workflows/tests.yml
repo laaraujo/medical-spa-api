@@ -53,7 +53,7 @@ jobs:
         uses: codecov/codecov-action@v4
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          slug: laaraujo/django-api-template
+          slug: laaraujo/medical-spa-api
 
       - name: Make coverage report available as github artifacts
         uses: actions/upload-artifact@v4
