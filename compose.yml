@@ -12,6 +12,7 @@ services:
     build: .
     command: >
       sh -c "python manage.py spectacular --color --file schema.yml &&
+             python manage.py migrate &&
              python manage.py runserver 0.0.0.0:${PORT}"
     volumes:
       - ./src:/code

@@ -15,6 +15,7 @@ help:
 	@echo collectstatic ............ : Django collectstatic command
 	@echo sh ....................... : SSH into local API container
 	@echo linter ................... : Run Ruff linter against all files in this repo
+	@echo test ..................... : Run automated tests
 	@echo
 
 
@@ -50,3 +51,6 @@ sh:
 
 linter:
 	pre-commit run --all-files
+
+test:
+	pytest --cov=src/ --import-mode=importlib
