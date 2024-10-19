@@ -1,5 +1,6 @@
 import pytest
 from django.contrib.auth.models import User
+from med_spa import models
 from model_bakery import baker
 from rest_framework.test import APIClient
 
@@ -21,3 +22,18 @@ def client() -> APIClient:
 @pytest.fixture
 def user() -> User:
     return baker.make(User)
+
+
+@pytest.fixture
+def med_spa() -> models.MedicalSpa:
+    return baker.make(models.MedicalSpa)
+
+
+@pytest.fixture
+def product() -> models.ServiceProduct:
+    return baker.make(models.ServiceProduct)
+
+
+@pytest.fixture
+def service() -> models.Service:
+    return baker.make(models.Service)

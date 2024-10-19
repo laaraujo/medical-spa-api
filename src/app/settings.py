@@ -141,6 +141,11 @@ MIDDLEWARE += ["whitenoise.middleware.WhiteNoiseMiddleware"]
 
 # Django Rest Framework
 REST_FRAMEWORK = {
+    "COERCE_DECIMAL_TO_STRING": False,
+    "DEFAULT_AUTHENTICATION_CLASSES": [
+        "rest_framework_simplejwt.authentication.JWTAuthentication"
+    ],
+    "EXCEPTION_HANDLER": "med_spa.exceptions.custom_exception_handler",
     # drf-spectacular / docs
     "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
 }
