@@ -38,7 +38,7 @@ migrate:
 	docker compose run app python manage.py migrate
 
 createsuperuser:
-	docker compose run app python manage.py createsuperuser --no-input
+	docker compose run app python manage.py createsuperuser
 
 collectstatic:
 	docker compose run app python manage.py collectstatic --no-input

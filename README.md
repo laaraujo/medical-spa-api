@@ -59,3 +59,9 @@ Swagger docs are available in the `/docs/` endpoint (http://localhost:8000/docs/
 - [DRF Spectacular](https://drf-spectacular.readthedocs.io/) for documentation
 - Pre-commit hooks w/ [Ruff](https://docs.astral.sh/ruff/) linter and [OTB Pre-commit hooks](https://github.com/pre-commit/pre-commit-hooks)
 - [Pytest](https://docs.pytest.org/) for testing
+
+## Possible improvements
+
+- Email validation for user-related actions (registration, password change, etc)
+- Proper data validation (phone numbers, address, etc)
+- Authorization (we're only implementing this for appointment updates)
