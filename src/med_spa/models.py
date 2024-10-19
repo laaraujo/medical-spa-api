@@ -81,7 +81,9 @@ class Service(BaseModel):
     price = models.DecimalField(
         max_digits=10, decimal_places=2, validators=[MinValueValidator(0)]
     )
-    duration = models.IntegerField()  # To be represented in minutes
+    duration = models.IntegerField(
+        MinValueValidator(1), help_text="Represented in minutes"
+    )
 
     class Meta:
         unique_together = (
