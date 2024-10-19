@@ -13,3 +13,10 @@ class ServiceViewSet(ModelViewSet):
         if self.request.method in ["PUT", "PATCH"]:
             return serializers.ServiceUpdateSerializer
         return serializers.ServiceSerializer
+
+    def get_queryset(self):
+        queryset = models.Service.objects.all()
+        med_spa = self.request.query_params.get("med_spa")
+        if med_spa is not None:
+            queryset = queryset.filter(med_spa__id=med_spa)
+        return queryset

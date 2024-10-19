@@ -65,3 +65,4 @@ Swagger docs are available in the `/docs/` endpoint (http://localhost:8000/docs/
 - Email validation for user-related actions (registration, password change, etc)
 - Proper data validation (phone numbers, address, etc)
 - Authorization (we're only implementing this for appointment updates)
+- Pagination for list endpoints
