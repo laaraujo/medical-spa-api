@@ -1,3 +1,4 @@
+from med_spa.exceptions import InvalidMedSpaId
 from model_bakery import baker
 
 
@@ -28,10 +29,18 @@ def test__with_med_spa_query_param__filters_results(client, user):
     assert data[0]["id"] == s1.id
 
 
-def test__with_invalid_med_spa_query_param__returns_no_results(client, user):
+def test__with_non_existent_med_spa_query_param__returns_no_results(client, user):
     s1, s2, s3 = [baker.make("med_spa.Service") for _ in range(3)]
     client.force_authenticate(user)
     r = client.get(f"/services/?med_spa=333")
     assert r.status_code == 200
     data = r.json()
     assert len(data) == 0
+
+
+def test__with_invalid_med_spa_query_param__returns_no_results(client, user):
+    s1, s2, s3 = [baker.make("med_spa.Service") for _ in range(3)]
+    client.force_authenticate(user)
+    r = client.get(f"/services/?med_spa=asd")
+    assert r.status_code == 400
+    assert r.json()["detail"] == InvalidMedSpaId.default_detail

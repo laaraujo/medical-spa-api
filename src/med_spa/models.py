@@ -110,9 +110,9 @@ class Appointment(BaseModel):
     )
 
     @property
-    def total_duration(self):
+    def total_duration(self) -> int:
         return sum(service.duration for service in self.services.all())
 
     @property
-    def total_price(self):
+    def total_price(self) -> float:
         return sum(service.price for service in self.services.all())

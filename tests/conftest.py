@@ -37,3 +37,11 @@ def product() -> models.ServiceProduct:
 @pytest.fixture
 def service() -> models.Service:
     return baker.make(models.Service)
+
+
+@pytest.fixture
+def appointment() -> models.Appointment:
+    appt = baker.make(models.Appointment)
+    service = baker.make(models.Service)
+    appt.services.set([service])
+    return appt
