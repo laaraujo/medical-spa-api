@@ -152,14 +152,14 @@ REST_FRAMEWORK = {
 }
 
 SIMPLE_JWT = {
-    "AUTH_HEADER_TYPES": ("JWT", "Bearer"),
+    "AUTH_HEADER_TYPES": ("Bearer"),
     "ACCESS_TOKEN_LIFETIME": timedelta(minutes=30),
 }
 
 # drf-spectacular
 SPECTACULAR_SETTINGS = {
-    "TITLE": "Django API Base Template",
-    "DESCRIPTION": "Django API Base Template",
+    "TITLE": "Medical Spa API",
+    "DESCRIPTION": "Medical Spa API",
     "VERSION": "1.0.0",
     "SERVE_INCLUDE_SCHEMA": False,
 }
