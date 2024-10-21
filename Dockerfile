@@ -10,6 +10,7 @@ RUN pip install -r requirements.txt
 
 COPY src/ .
 
-RUN python manage.py spectacular --color --file schema.yml
+RUN python manage.py spectacular --file schema.yml
+RUN python manage.py collectstatic --noinput
 
 CMD ["python", "manage.py", "runserver", "0.0.0.0:$PORT"]
