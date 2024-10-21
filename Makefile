@@ -13,6 +13,7 @@ help:
 	@echo createsuperuser .......... : Django createsuperuser command
 	@echo shell .................... : Django shell command
 	@echo collectstatic ............ : Django collectstatic command
+	@echo seed ..................... : Seed database with service products and fake data
 	@echo sh ....................... : SSH into local API container
 	@echo linter ................... : Run Ruff linter against all files in this repo
 	@echo test ..................... : Run automated tests
@@ -45,6 +46,9 @@ collectstatic:
 
 shell:
 	docker compose run app python manage.py shell
+
+seed:
+	docker compose run app python manage.py seed
 
 sh:
 	docker exec -it $(container_name) /bin/sh

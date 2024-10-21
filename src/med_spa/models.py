@@ -66,7 +66,7 @@ class ServiceProduct(BaseModel):
 
     class Meta:
         verbose_name = "Service Product"
-        unique_together = ("name", "type")
+        unique_together = ("name", "type", "provider")
 
 
 class Service(BaseModel):

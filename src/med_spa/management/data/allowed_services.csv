@@ -1,0 +1,111 @@
+Service Category,Service Type,Service Product,Service Product Supplier(Optional)
+Injectables,Neuromodulator,Botox,Allergan
+Injectables,Neuromodulator,Daxxify,Revance
+Injectables,Neuromodulator,Dysport,Galderma
+Injectables,Neuromodulator,Jeuveau,Evolus
+Injectables,Neuromodulator,Xeomin,Merz
+Injectables,HA Dermal Filler,Juvederm Ultra XC,Allergan
+Injectables,HA Dermal Filler,Juvederm Ultra Plus XC,Allergan
+Injectables,HA Dermal Filler,Juvederm Volbella,Allergan
+Injectables,HA Dermal Filler,Juvederm Vollure,Allergan
+Injectables,HA Dermal Filler,Juvederm Voluma,Allergan
+Injectables,HA Dermal Filler,Juvederm Volux,Allergan
+Injectables,HA Dermal Filler,Juvederm Skinvive,Allergan
+Injectables,HA Dermal Filler,Restylane,Galderma
+Injectables,HA Dermal Filler,Restylane-L,Galderma
+Injectables,HA Dermal Filler,Restylane Contour,Galderma
+Injectables,HA Dermal Filler,Restylane Defyne,Galderma
+Injectables,HA Dermal Filler,Restylane Eyelight,Galderma
+Injectables,HA Dermal Filler,Restylane Kysse,Galderma
+Injectables,HA Dermal Filler,Restylane Lyft,Galderma
+Injectables,HA Dermal Filler,Restylane Silk,Galderma
+Injectables,HA Dermal Filler,Restylane Refyne,Galderma
+Injectables,HA Dermal Filler,RHA 2,Revance
+Injectables,HA Dermal Filler,RHA 3,Revance
+Injectables,HA Dermal Filler,RHA 4,Revance
+Injectables,HA Dermal Filler,RHA Redensity,Revance
+Injectables,HA Dermal Filler,Revanesse Lips,Prollenium
+Injectables,HA Dermal Filler,Revanesse Versa,Prollenium
+Injectables,HA Dermal Filler,Belotero Balance,Merz
+Injectables,Calcium Hydroxyapatite,Radiesse,Merz
+Injectables,Calcium Hydroxyapatite,Hyperdilute Radiesse,Merz
+Injectables,Hyaluronidase,Hylanex,--
+Injectables,Polymethyl methacrylate (PMMA),Bellafill,Suneva
+Injectables,Poly-L Lactic Acid,Sculptra,Galderma
+Peels,Chemical Peel,PRX,WiQo
+Peels,Chemical Peel,VI Peel: Classic Precision Plus,VI
+Peels,Chemical Peel,SkinMedica: Illuminze,Allergan
+Peels,Chemical Peel,SkinMedica: Rejuvenize,Allergan
+Peels,Chemical Peel,SkinMedica: Vitalize,Allergan
+Peels,Chemical Peel,ZO Skin Health: 3 step peel,Zo Skin Health
+Peels,Chemical Peel,Perfect DermaPeel,Bella Medical Products
+Peels,Chemical Peel,TCA,--
+Peels,Chemical Peel,Other Chemical Peel Product,--
+Fat Dissolving ,Deoxycholic Acid,Kybella,--
+Sclerotherapy,Sclerotherapy,Asclera,Asclera
+Threads,PDO Threads,Smooth PDO Threads,Mint
+Threads,PDO Threads,Smooth PDO Threads,Miracu
+Threads,PDO Threads,Smooth PDO Threads,PDO Max
+Threads,PDO Threads,Smooth PDO Threads,V Soft Lift
+Threads,PDO Threads,Smooth PDO Threads,Viola Threads
+Threads,PDO Threads,Smooth PDO Threads,NovaThreads
+Threads,PDO Threads,Smooth PDO Threads,EuroThreads
+Threads,PDO Threads,Smooth PDO Threads,Other
+Threads,PDO Threads,Lifting PDO Threads,Mint
+Threads,PDO Threads,Lifting PDO Threads,Miracu
+Threads,PDO Threads,Lifting PDO Threads,PDO Max
+Threads,PDO Threads,Lifting PDO Threads,V Soft Lift
+Threads,PDO Threads,Lifting PDO Threads,Viola Threads
+Threads,PDO Threads,Lifting PDO Threads,NovaThreads
+Threads,PDO Threads,Lifting PDO Threads,EuroThreads
+Threads,PDO Threads,Lifting PDO Threads,Other
+Threads,PDO Threads,Barbed/Cones PDO Threads,Mint
+Threads,PDO Threads,Barbed/Cones PDO Threads,Miracu
+Threads,PDO Threads,Barbed/Cones PDO Threads,PDO Max
+Threads,PDO Threads,Barbed/Cones PDO Threads,V Soft Lift
+Threads,PDO Threads,Barbed/Cones PDO Threads,Viola Threads
+Threads,PDO Threads,Barbed/Cones PDO Threads,NovaThreads
+Threads,PDO Threads,Barbed/Cones PDO Threads,EuroThreads
+Threads,PDO Threads,Barbed/Cones PDO Threads,Other
+Weightloss,GLP-1 Antagonists,Trizepatide,
+Weightloss,GLP-1 Antagonists,Phentermine,
+Weightloss,GLP-1 Antagonists,Liraglutide,
+Weightloss,GLP-1 Antagonists,Semaglutide,
+IV Therapy,IV Therapy,B Vitamins,--
+IV Therapy,IV Therapy,Vitamin C,
+IV Therapy,IV Therapy,Arginine,
+IV Therapy,IV Therapy,Ornithine,
+IV Therapy,IV Therapy,Lysine,
+IV Therapy,IV Therapy,Carnitine,
+IV Therapy,IV Therapy,Ascorbic Acid,
+IV Therapy,IV Therapy,Biotin,
+IV Therapy,IV Therapy,Manganese,
+IV Therapy,IV Therapy,Copper,
+IV Therapy,IV Therapy,Magnesium Chloride,
+IV Therapy,IV Therapy,Calcium Chloride,
+IV Therapy,IV Therapy,NAD,
+IV Therapy,IV Therapy,Zinc,
+IV Therapy,IV Therapy,Glutathione,
+Vitamin Injections,Vitamin Injections,B-12,
+Vitamin Injections,Vitamin Injections,MIC,
+Vitamin Injections,Vitamin Injections,Glutathione,--
+Peptide Therapy,Peptide Therapy,Ipamorelin,
+Peptide Therapy,Peptide Therapy,CJC,
+Peptide Therapy,Peptide Therapy,BPC 157,
+Ultrasound,Ultrasound,--,--
+Ultrasound,Ultrasound,,
+Ultrasound,Ultrasound,--,--
+Facials,Hydrafacial,,
+Facials,SilkPeel,,
+Facials,Diamond Glow,,
+Facials,Other facial,,--
+Other Non Medical,Massage,--,--
+Other Non Medical,Microblading,--,
+Other Non Medical,Microdermabrasion,--,
+Other Non Medical,Dermaplaning,,
+Other Non Medical,Teeth Whitening,,
+Other Non Medical,Waxing,--,--
+Other Non Medical,Other Non Medical Service,--,--
+Consultation,Consultation,-- ,--
+Follow up,Follow up,,
+Other,Other,,
